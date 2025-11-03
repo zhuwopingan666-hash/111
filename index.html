@@ -13,7 +13,7 @@
     padding:8px; 
     box-sizing:border-box; 
     font-family:monospace; 
-    font-size:16px; /* 关键：16px 避免移动端放大 */ 
+    font-size:16px; /* 避免移动端自动放大 */ 
     resize:vertical; 
   }
   button { 
@@ -21,7 +21,7 @@
     border-radius:6px; 
     border:none; 
     cursor:pointer; 
-    font-size:16px; /* 关键：16px 避免移动端放大 */ 
+    font-size:16px; /* 避免移动端自动放大 */ 
   }
   button.main { background:#0366d6; color:#fff; }
   button.main:hover { background:#024ea1; }
@@ -37,8 +37,8 @@
     padding:12px; 
     border-radius:8px; 
     box-shadow:0 1px 4px rgba(0,0,0,0.06); 
-    max-height:60vh; 
-    overflow:auto; 
+    height:auto; /* 自动撑开高度 */
+    overflow:visible; /* 不再单独滚动 */
   }
   .word { background:#e6f0ff; border-radius:6px; padding:2px 6px; margin:0 4px 4px 0; display:inline-flex; align-items:center; gap:6px; cursor:pointer; word-break:break-word; }
   .word:hover { background:#cfe6ff; }
